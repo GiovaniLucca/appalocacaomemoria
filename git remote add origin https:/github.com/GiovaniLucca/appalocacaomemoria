@@ -1,0 +1,19 @@
+package appalocacaomemoria;
+import java.util.Scanner;
+public class AppAlocacaoMemoria {
+    public static void main(String[] args) {
+        Produto p1 = new Produto("Arroz", 10.90);
+        Produto p2 = new Produto("Feijão", 8.78);
+        Produto p3 = new Produto("Leite de soja", 2.87);
+        Produto p4 = new Produto("Álcool em gel", 45.89);
+                
+        // Pedido = lista de produtos
+        Pedido p = new Pedido(2);                
+        p.adicionaProduto(p1);
+        p.adicionaProduto(p2);
+        p.adicionaProduto(p3);
+        p.adicionaProduto(p4);
+        
+        System.out.println(p.toString());
+    }
+}
